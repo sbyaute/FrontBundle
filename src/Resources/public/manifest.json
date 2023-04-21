@@ -1,0 +1,23 @@
+{
+  "bundles/front/front.css": "/bundles/front/front.css",
+  "bundles/front/front.js": "/bundles/front/front.js",
+  "bundles/front/fonts/am-icon.svg": "/bundles/front/fonts/am-icon.svg",
+  "bundles/front/images/am-icon.svg": "/bundles/front/images/am-icon.af51845e.svg",
+  "bundles/front/fonts/am-icon-sc.svg": "/bundles/front/fonts/am-icon-sc.svg",
+  "bundles/front/images/am-icon-sc.svg": "/bundles/front/images/am-icon-sc.629c91a0.svg",
+  "bundles/front/fonts/bootstrap-icons.woff": "/bundles/front/fonts/bootstrap-icons.6959d0d9.woff",
+  "bundles/front/fonts/bootstrap-icons.woff2": "/bundles/front/fonts/bootstrap-icons.b2e5aab6.woff2",
+  "bundles/front/fonts/am-icon.eot": "/bundles/front/fonts/am-icon.eot",
+  "bundles/front/fonts/am-icon.woff": "/bundles/front/fonts/am-icon.woff",
+  "bundles/front/fonts/am-icon.ttf": "/bundles/front/fonts/am-icon.ttf",
+  "bundles/front/fonts/am-icon-sc.eot": "/bundles/front/fonts/am-icon-sc.eot",
+  "bundles/front/fonts/am-icon-sc.woff": "/bundles/front/fonts/am-icon-sc.woff",
+  "bundles/front/fonts/am-icon-sc.ttf": "/bundles/front/fonts/am-icon-sc.ttf",
+  "bundles/front/fonts/cabin-v18-latin-600.woff": "/bundles/front/fonts/cabin-v18-latin-600.woff",
+  "bundles/front/fonts/source-sans-pro-v18-latin-regular.woff": "/bundles/front/fonts/source-sans-pro-v18-latin-regular.woff",
+  "bundles/front/fonts/cabin-v18-latin-600.woff2": "/bundles/front/fonts/cabin-v18-latin-600.woff2",
+  "bundles/front/fonts/source-sans-pro-v18-latin-regular.woff2": "/bundles/front/fonts/source-sans-pro-v18-latin-regular.woff2",
+  "bundles/front/images/ASSURANCE_MALADIE_Logo_RVB.png": "/bundles/front/images/ASSURANCE_MALADIE_Logo_RVB.png",
+  "bundles/front/images/ASSURANCE_MALADIE_Logo_RVB_mini.png": "/bundles/front/images/ASSURANCE_MALADIE_Logo_RVB_mini.png",
+  "bundles/front/images/favicon-32x32.png": "/bundles/front/images/favicon-32x32.png"
+}

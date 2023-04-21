@@ -1,0 +1,17 @@
+<header class="titre-page d-flex align-items-center mb-4 p-2">
+    <button type="button" aria-label="Toggle menu" class="sidebar-nav-toggle btn text-white">
+        <i class="bi-dash-square sidebar-nav-close"></i>
+        <i class="bi-plus-square sidebar-nav-open"></i>
+    </button>
+    {% block page_title %}
+        {% if page_picto is defined %}
+            <i class="picto-page {{ page_picto }}"></i>
+        {% endif %}
+        <h3 class="mb-0">
+            <span>{{ page_title }}</span>
+            {% if page_subtitle is defined %}
+                <small>{{ page_subtitle }}</small>
+            {% endif %}
+        </h3>
+    {% endblock %}
+</header>

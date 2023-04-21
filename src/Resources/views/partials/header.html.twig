@@ -1,0 +1,46 @@
+{#<header class="entete container-fluid py-4">#}
+<header class="entete container-fluid">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-10 row">
+            <div class="justify-content align-items-center row">
+                <a href="{% block logo_path %}{{ path(get_parameter('front.homepage')) }}{% endblock %}" class="logo col-auto">
+                    <img alt="Assurance Maladie" class="img-logo img-fluid" src="{{ asset('bundles/front/images/ASSURANCE_MALADIE_Logo_RVB.png') }}">
+                    <img alt="Assurance Maladie" class="img-logo-mini img-fluid" src="{{ asset('bundles/front/images/ASSURANCE_MALADIE_Logo_RVB_mini.png') }}">
+                </a>
+                <div class="col-auto mt-0 mx-1 px-2">
+                    <h1 class="col-auto align-middle titre-application d-inline">
+                        {% if 'prod' is not same as get_parameter('kernel.environment') %}
+                            <span class="badge rounded-pill am-bg-coul-brique-700 py-1 px-2 fs-6">
+                                {{ get_parameter('kernel.environment') }}
+                            </span>
+                        {% endif %}
+
+                        {{ get_parameter('front.app_title')|raw }}
+                    </h1>
+                    <h2 class="col align-middle d-inline">
+                        <span class="sous-titre-application align-middle">
+                            {{ get_parameter('front.app_subtitle')|raw }}
+                        </span>
+                    </h2>
+                </div>
+                <div class="col">
+                {% if app.user %}
+                    <nav class="navbar navbar bg justify-content-end">
+                        <div class="mb-3">
+                            Bonjour {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Se déconnecter</a>
+                        </div>
+                    </nav>
+                {% else %}
+                    <nav class="navbar navbar bg justify-content-end">
+                        <div class="mb-3">
+                            <a href="{{ path('app_login') }}">Se connecter</a>
+                        </div>
+                    </nav>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</header>

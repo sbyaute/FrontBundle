@@ -1,0 +1,21 @@
+{% if user is not null %}
+    <div class="toast-container position-absolute p-3" id="toastPlacement" style="top: 70px; left: -10px;">
+        <div id="userToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">
+                    {{ user.prenom|capitalize }} {{ user.nom|capitalize }}
+                </strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Vous disposez des rôles suivants :
+                <ul>
+                    {% for role in user.roles %}
+                        <li>{{ role }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endif %}
+

@@ -1,0 +1,301 @@
+/* Palette digital (charte AM) */
+
+$am-coul-blanc: #fff;
+
+$am-coul-bleu-am: #0C419A;
+$am-coul-bleu-am-100: #E7ECF5;
+$am-coul-bleu-am-200: #CED9EB;
+$am-coul-bleu-am-300: #6D8DC2;
+$am-coul-bleu-am-400: #3D67AE;
+$am-coul-bleu-am-500: $am-coul-bleu-am;
+$am-coul-bleu-am-600: #0B3A8B;
+$am-coul-bleu-am-700: #0A347B;
+$am-coul-bleu-am-800: #082E6C;
+$am-coul-bleu-am-900: #06204D;
+
+$am-coul-cyan: #00A5DF;
+$am-coul-cyan-100: #E6F6FC;
+$am-coul-cyan-200: #CCEDF9;
+$am-coul-cyan-300: #66C9EC;
+$am-coul-cyan-400: #33B7E5;
+$am-coul-cyan-500: $am-coul-cyan;
+$am-coul-cyan-600: #0094C9;
+$am-coul-cyan-700: #0084B2;
+$am-coul-cyan-800: #00749C;
+$am-coul-cyan-900: #005270;
+
+$am-coul-bleu-givre: #65AEC1;
+$am-coul-bleu-givre-100: #F0F7F9;
+$am-coul-bleu-givre-200: #E0EFF3;
+$am-coul-bleu-givre-300: #A3CEDA;
+$am-coul-bleu-givre-400: #84BECD;
+$am-coul-bleu-givre-500: $am-coul-bleu-givre;
+$am-coul-bleu-givre-600: #5B9DAE;
+$am-coul-bleu-givre-700: #518B9A;
+$am-coul-bleu-givre-800: #477A87;
+$am-coul-bleu-givre-900: #335760;
+
+$am-coul-parme: #758CC0;
+$am-coul-parme-100: #F1F4F9;
+$am-coul-parme-200: #E3E8F2;
+$am-coul-parme-300: #ACBAD9;
+$am-coul-parme-400: #91A3CD;
+$am-coul-parme-500: $am-coul-parme;
+$am-coul-parme-600: #697EAD;
+$am-coul-parme-700: #5E709A;
+$am-coul-parme-800: #526286;
+$am-coul-parme-900: #3B4660;
+
+$am-coul-mauve: #A05BB6;
+$am-coul-mauve-100: #F6EFF8;
+$am-coul-mauve-200: #ECDEF0;
+$am-coul-mauve-300: #C69DD3;
+$am-coul-mauve-400: #B37CC5;
+$am-coul-mauve-500: $am-coul-mauve;
+$am-coul-mauve-600: #9052A4;
+$am-coul-mauve-700: #804992;
+$am-coul-mauve-800: #70407F;
+$am-coul-mauve-900: #502D5B;
+
+$am-coul-rose: #E31C79;
+$am-coul-rose-100: #FCE8F2;
+$am-coul-rose-200: #F9D1E6;
+$am-coul-rose-300: #ED76B3;
+$am-coul-rose-400: #E7489A;
+$am-coul-rose-500: $am-coul-rose;
+$am-coul-rose-600: #CA1774;
+$am-coul-rose-700: #B41567;
+$am-coul-rose-800: #9E125A;
+$am-coul-rose-900: #700D40;
+
+$am-coul-brique: #CD545B;
+$am-coul-brique-100: #FAEEEF;
+$am-coul-brique-200: #F5DDDE;
+$am-coul-brique-300: #E1989D;
+$am-coul-brique-400: #D7767C;
+$am-coul-brique-500: $am-coul-brique;
+$am-coul-brique-600: #B94C52;
+$am-coul-brique-700: #A44349;
+$am-coul-brique-800: #903B40;
+$am-coul-brique-900: #672A2D;
+
+$am-coul-orange: #E04F39;
+$am-coul-orange-100: #FCEDEB;
+$am-coul-orange-200: #F9DCD7;
+$am-coul-orange-300: #EC9588;
+$am-coul-orange-400: #E67261;
+$am-coul-orange-500: $am-coul-orange;
+$am-coul-orange-600: #CA4733;
+$am-coul-orange-700: #B33F2E;
+$am-coul-orange-800: #9D3728;
+$am-coul-orange-900: #70281C;
+
+$am-coul-jaune: #F0B323;
+$am-coul-jaune-100: #FEF7E9;
+$am-coul-jaune-200: #FCF0D3;
+$am-coul-jaune-300: #F6D17B;
+$am-coul-jaune-400: #F3C24F;
+$am-coul-jaune-500: $am-coul-jaune;
+$am-coul-jaune-600: #D8A120;
+$am-coul-jaune-700: #C08F1C;
+$am-coul-jaune-800: #A87D19;
+$am-coul-jaune-900: #785912;
+
+$am-coul-vert: #56C271;
+$am-coul-vert-100: #EEF9F1;
+$am-coul-vert-200: #DDF3E3;
+$am-coul-vert-300: #9ADAAA;
+$am-coul-vert-400: #78CE8D;
+$am-coul-vert-500: $am-coul-vert;
+$am-coul-vert-600: #4DAF66;
+$am-coul-vert-700: #459B5A;
+$am-coul-vert-800: #3C884F;
+$am-coul-vert-900: #2B6138;
+
+$am-coul-turquoise: #00AB8E;
+$am-coul-turquoise-100: #E6F7F4;
+$am-coul-turquoise-200: #CCEEE8;
+$am-coul-turquoise-300: #66CDBB;
+$am-coul-turquoise-400: #33BCA5;
+$am-coul-turquoise-500: $am-coul-turquoise;
+$am-coul-turquoise-600: #009A80;
+$am-coul-turquoise-700: #008972;
+$am-coul-turquoise-800: #007863;
+$am-coul-turquoise-900: #005647;
+
+$am-coul-gris: #545859;
+$am-coul-gris-100: #EEEEEE;
+$am-coul-gris-200: #DDDEDE;
+$am-coul-gris-300: #989B9B;
+$am-coul-gris-400: #76797A;
+$am-coul-gris-500: $am-coul-gris;
+$am-coul-gris-600: #4C4F50;
+$am-coul-gris-700: #434647;
+$am-coul-gris-800: #3B3E3E;
+$am-coul-gris-900: #2A2C2C;
+
+$am-coul-list: (
+    bleu-am: (
+        100: $am-coul-bleu-am-100,
+        200: $am-coul-bleu-am-200,
+        300: $am-coul-bleu-am-300,
+        400: $am-coul-bleu-am-400,
+        500: $am-coul-bleu-am-500,
+        600: $am-coul-bleu-am-600,
+        700: $am-coul-bleu-am-700,
+        800: $am-coul-bleu-am-800,
+        900: $am-coul-bleu-am-900,
+    ),
+    cyan: (
+        100: $am-coul-cyan-100,
+        200: $am-coul-cyan-200,
+        300: $am-coul-cyan-300,
+        400: $am-coul-cyan-400,
+        500: $am-coul-cyan-500,
+        600: $am-coul-cyan-600,
+        700: $am-coul-cyan-700,
+        800: $am-coul-cyan-800,
+        900: $am-coul-cyan-900,
+    ),
+    bleu-givre: (
+        100: $am-coul-bleu-givre-100,
+        200: $am-coul-bleu-givre-200,
+        300: $am-coul-bleu-givre-300,
+        400: $am-coul-bleu-givre-400,
+        500: $am-coul-bleu-givre-500,
+        600: $am-coul-bleu-givre-600,
+        700: $am-coul-bleu-givre-700,
+        800: $am-coul-bleu-givre-800,
+        900: $am-coul-bleu-givre-900,
+    ),
+    parme: (
+        100: $am-coul-parme-100,
+        200: $am-coul-parme-200,
+        300: $am-coul-parme-300,
+        400: $am-coul-parme-400,
+        500: $am-coul-parme-500,
+        600: $am-coul-parme-600,
+        700: $am-coul-parme-700,
+        800: $am-coul-parme-800,
+        900: $am-coul-parme-900,
+    ),
+    mauve: (
+        100: $am-coul-mauve-100,
+        200: $am-coul-mauve-200,
+        300: $am-coul-mauve-300,
+        400: $am-coul-mauve-400,
+        500: $am-coul-mauve-500,
+        600: $am-coul-mauve-600,
+        700: $am-coul-mauve-700,
+        800: $am-coul-mauve-800,
+        900: $am-coul-mauve-900,
+    ),
+    rose: (
+        100: $am-coul-rose-100,
+        200: $am-coul-rose-200,
+        300: $am-coul-rose-300,
+        400: $am-coul-rose-400,
+        500: $am-coul-rose-500,
+        600: $am-coul-rose-600,
+        700: $am-coul-rose-700,
+        800: $am-coul-rose-800,
+        900: $am-coul-rose-900,
+    ),
+    brique: (
+        100: $am-coul-brique-100,
+        200: $am-coul-brique-200,
+        300: $am-coul-brique-300,
+        400: $am-coul-brique-400,
+        500: $am-coul-brique-500,
+        600: $am-coul-brique-600,
+        700: $am-coul-brique-700,
+        800: $am-coul-brique-800,
+        900: $am-coul-brique-900,
+    ),
+    orange: (
+        100: $am-coul-orange-100,
+        200: $am-coul-orange-200,
+        300: $am-coul-orange-300,
+        400: $am-coul-orange-400,
+        500: $am-coul-orange-500,
+        600: $am-coul-orange-600,
+        700: $am-coul-orange-700,
+        800: $am-coul-orange-800,
+        900: $am-coul-orange-900,
+    ),
+    jaune: (
+        100: $am-coul-jaune-100,
+        200: $am-coul-jaune-200,
+        300: $am-coul-jaune-300,
+        400: $am-coul-jaune-400,
+        500: $am-coul-jaune-500,
+        600: $am-coul-jaune-600,
+        700: $am-coul-jaune-700,
+        800: $am-coul-jaune-800,
+        900: $am-coul-jaune-900,
+    ),
+    vert: (
+        100: $am-coul-vert-100,
+        200: $am-coul-vert-200,
+        300: $am-coul-vert-300,
+        400: $am-coul-vert-400,
+        500: $am-coul-vert-500,
+        600: $am-coul-vert-600,
+        700: $am-coul-vert-700,
+        800: $am-coul-vert-800,
+        900: $am-coul-vert-900,
+    ),
+    turquoise: (
+        100: $am-coul-turquoise-100,
+        200: $am-coul-turquoise-200,
+        300: $am-coul-turquoise-300,
+        400: $am-coul-turquoise-400,
+        500: $am-coul-turquoise-500,
+        600: $am-coul-turquoise-600,
+        700: $am-coul-turquoise-700,
+        800: $am-coul-turquoise-800,
+        900: $am-coul-turquoise-900,
+    ),
+    gris: (
+        100: $am-coul-gris-100,
+        200: $am-coul-gris-200,
+        300: $am-coul-gris-300,
+        400: $am-coul-gris-400,
+        500: $am-coul-gris-500,
+        600: $am-coul-gris-600,
+        700: $am-coul-gris-700,
+        800: $am-coul-gris-800,
+        900: $am-coul-gris-900,
+    )
+);
+
+@each $coul, $list in $am-coul-list {
+    // Couleur principale
+    $selector: ".am-coul-#{$coul}";
+    $selectorBg: ".am-bg-coul-#{$coul}";
+    $selectorBorder: ".border.am-br-coul-#{$coul}";
+    #{$selector} {
+        color: map-get($list, 500) !important;
+    }
+    #{$selectorBg} {
+        background-color: map-get($list, 500) !important;
+    }
+    #{$selectorBorder} {
+        border-color: map-get($list, 500) !important;
+    }
+    @each $variant, $rgb in $list {
+        // Variants
+        $selector: ".am-coul-#{$coul}-#{$variant}";
+        $selectorBg: ".am-bg-coul-#{$coul}-#{$variant}";
+        $selectorBorder: ".border.am-br-coul-#{$coul}-#{$variant}";
+        #{$selector} {
+            color: $rgb !important;
+        }
+        #{$selectorBg} {
+            background-color: $rgb !important;
+        }
+        #{$selectorBorder} {
+            border-color: $rgb !important;
+        }
+    }
+}

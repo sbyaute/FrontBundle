@@ -1,0 +1,30 @@
+<aside class="sidebar-nav col-auto">
+    {% block sidebar %}
+        {% block sidebar_user %}
+            {% if user is not null %}
+            <button class="user hstack py-2">
+                <div class="user-avatar">
+                    <i class="bi-person-circle fs-1"></i>
+                </div>
+                <div class="user-info">
+                    {{ user.prenom|capitalize }} {{ user.nom|capitalize }}
+                </div>
+            </button>
+            {% endif %}
+        {% endblock sidebar_user %}
+
+        {{ knp_menu_render('front_main_menu', {
+            "template": "@Front/partials/menu_render.html.twig",
+            "currentClass": "current mm-show mm-active",
+            "ancestorClass": "current_ancestor mm-active"
+        }) }}
+
+        {% block sidebar_version %}
+            {% if get_parameter('front.app_version') is not empty %}
+                <div class="app-version mt-2 mb-2">
+                    v {{ get_parameter('front.app_version')|raw }}
+                </div>
+            {% endif %}
+        {% endblock sidebar_version %}
+    {% endblock sidebar %}
+</aside>

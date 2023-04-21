@@ -1,0 +1,146 @@
+.sidebar-nav {
+    padding: 0rem !important;
+    background-color: $am-coul-menu-fond !important;
+    color: $am-coul-texte-inverse;
+    max-width: 14rem;
+    min-width: 14rem;
+    transition: max-width 0.6s ease, min-width 0.6s ease;
+    /* Hauteur du viewport - hauteur de l'entête */
+    min-height: calc(100vh - 110px);
+    font-size: 0.9rem;
+}
+.sidebar-nav a {
+    color: $am-coul-texte-inverse;
+    text-decoration: none;
+}
+
+/* Menu réduit */
+.sidebar-nav-mini {
+    /* Hauteur du viewport - hauteur de l'entête réduite */
+    min-height: calc(100vh - 82px);
+    min-width: 6rem;
+    /* Hauteur du viewport - hauteur de l'entête réduite */
+    min-height: calc(100vh - 82px);
+}
+.sidebar-nav-mini .label, .sidebar-nav-open, .sidebar-nav-mini + main .sidebar-nav-close {
+    display: none;
+}
+.sidebar-nav-mini + main  .sidebar-nav-open {
+    display: inline;
+}
+.sidebar-nav-mini .user-info {
+    display: none;
+}
+.sidebar-nav-mini .user {
+    /* Pictogramme centré */
+    margin: auto;
+}
+@media (max-width:767px) {
+    .sidebar-nav-open, .sidebar-nav-close {
+        display: none !important;
+    }
+}
+
+/* Informations utilisateur */
+.sidebar-nav:not(.sidebar-nav-mini) .user {
+    padding-left: 0.6rem;
+}
+
+/* Plié / déplié du menu */
+.sidebar-nav-open, .sidebar-nav-close {
+    font-size: 1.2rem;
+}
+
+.sidebar-nav .app-version {
+    text-align: center;
+}
+
+.sidebar-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Élément texte du menu */
+.sidebar-nav .label, .sidebar-nav .user-info {
+    /* Espace entre le texte et la flèche plié / déplié ou le bord du menu */
+    padding-right: 0.2rem;
+    /* Espace entre le texte et l'icône */
+    padding-left: 0.4rem;
+}
+.sidebar-nav-mini .label {
+    padding-left: unset !important;
+}
+
+/* Icônes */
+.sidebar-nav .icon {
+    font-size: 1.4rem;
+}
+
+/* Survol des éléments */
+.sidebar-nav a:hover .label, .sidebar-nav a:hover .icon {
+    color: $am-coul-gris-200;
+}
+.sidebar-nav a:hover .label {
+    font-style: italic;
+}
+
+.metismenu .has-arrow:after {
+    right: 0.4rem;
+}
+
+.sidebar-nav .metismenu {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bordure supérieure des bloc sous-menu */
+.sidebar-nav .metismenu .menu_level_1,
+.sidebar-nav .metismenu .menu_level_2 {
+    border-top: 1px solid $am-coul-blanc;
+}
+/* La couleur de fond est éclaircie à mesure que le menu gagne en profondeur */
+.sidebar-nav .metismenu .menu_level_1 {
+    background-color: $am-coul-cyan-700;
+}
+.sidebar-nav .metismenu .menu_level_2 {
+    background-color: $am-coul-cyan-600;
+}
+
+.sidebar-nav .metismenu > li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.sidebar-nav .metismenu > li.header {
+    background-color: $am-coul-bleu-givre-700;
+    padding: .6rem 1rem;
+}
+.sidebar-nav .metismenu a {
+    position: relative;
+    display: block;
+    padding: 0.6rem 2rem 0.6rem 1rem;
+    transition: all 0.3s ease-out;
+}
+.sidebar-nav-mini a .icon {
+    padding-left: 1.2rem;
+}
+
+.sidebar-nav:not(.sidebar-nav-mini) .metismenu ul a {
+    padding: 0.6rem 0.9rem 0.6rem 1.6rem;
+}
+.sidebar-nav:not(.sidebar-nav-mini) .metismenu ul ul a {
+    padding: 0.6rem 0.9rem 0.6rem 2.4rem;
+}
+.sidebar-nav-mini .metismenu ul a {
+    padding: 0.6rem 0.9rem;
+}
+
+.sidebar-nav-mini .metismenu .header {
+    display: none;
+}
+
+/* Route active */
+.sidebar-nav .metismenu .current {
+    background-color: $am-coul-menu-actif;
+}

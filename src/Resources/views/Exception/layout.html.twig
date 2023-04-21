@@ -1,0 +1,44 @@
+{# templates/base.html.twig #}
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+    {% endblock %}
+
+    {% block favicon %}
+        <link rel="icon" type="image/png" href="{{ asset('bundles/front/images/favicon-32x32.png') }}" />{% endblock %}
+
+    <title>
+        {% block title %}{{ title|raw }} {% endblock %}
+    </title>
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('bundles/front/front.css') }}">
+    {% endblock %}
+</head>
+
+<body class="front-bundle {% block body_class %}{% endblock %}">
+{% include '@Front/partials/header.html.twig' %}
+<div class="container-fluid">
+    <div class="row">
+        <aside class="sidebar-nav col-auto">
+        </aside>
+        <main class="col">
+            <section class="row mx-1">
+                <div class="container p-0 mt-3">
+                    <div class="card border-danger">
+                        <div class="card-header bg-danger text-white">
+                            <h3 class="card-title">{{ title }}</h3>
+                        </div>
+                        <div class="card-body">
+                            {% block message %}{% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>

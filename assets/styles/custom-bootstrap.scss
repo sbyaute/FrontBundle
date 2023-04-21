@@ -1,0 +1,264 @@
+/* Palette Bootstrap */
+
+$white:   $am-coul-blanc;
+$black:   #000;
+
+$gray:     $am-coul-gris;
+$gray-100: $am-coul-gris-100;
+$gray-200: $am-coul-gris-200;
+$gray-300: $am-coul-gris-300;
+$gray-400: $am-coul-gris-400;
+$gray-500: $gray;
+$gray-600: $am-coul-gris-600;
+$gray-700: $am-coul-gris-700;
+$gray-800: $am-coul-gris-800;
+$gray-900: $am-coul-gris-900;
+
+$blue:     $am-coul-gris;
+$blue-100: $am-coul-bleu-am-100;
+$blue-200: $am-coul-bleu-am-200;
+$blue-300: $am-coul-bleu-am-300;
+$blue-400: $am-coul-bleu-am-400;
+$blue-500: $blue;
+$blue-600: $am-coul-bleu-am-600;
+$blue-700: $am-coul-bleu-am-700;
+$blue-800: $am-coul-bleu-am-800;
+$blue-900: $am-coul-bleu-am-900;
+
+$cyan:     $am-coul-cyan;
+$cyan-100: $am-coul-cyan-100;
+$cyan-200: $am-coul-cyan-200;
+$cyan-300: $am-coul-cyan-300;
+$cyan-400: $am-coul-cyan-400;
+$cyan-500: $cyan;
+$cyan-600: $am-coul-cyan-600;
+$cyan-700: $am-coul-cyan-700;
+$cyan-800: $am-coul-cyan-800;
+$cyan-900: $am-coul-cyan-900;
+
+$indigo:     $am-coul-parme;
+$indigo-100: $am-coul-parme-100;
+$indigo-200: $am-coul-parme-200;
+$indigo-300: $am-coul-parme-300;
+$indigo-400: $am-coul-parme-400;
+$indigo-500: $indigo;
+$indigo-600: $am-coul-parme-600;
+$indigo-700: $am-coul-parme-700;
+$indigo-800: $am-coul-parme-800;
+$indigo-900: $am-coul-parme-900;
+
+$purple:     $am-coul-mauve;
+$purple-100: $am-coul-mauve-100;
+$purple-200: $am-coul-mauve-200;
+$purple-300: $am-coul-mauve-300;
+$purple-400: $am-coul-mauve-400;
+$purple-500: $purple;
+$purple-600: $am-coul-mauve-600;
+$purple-700: $am-coul-mauve-700;
+$purple-800: $am-coul-mauve-800;
+$purple-900: $am-coul-mauve-900;
+
+$pink:     $am-coul-rose;
+$pink-100: $am-coul-rose-100;
+$pink-200: $am-coul-rose-200;
+$pink-300: $am-coul-rose-300;
+$pink-400: $am-coul-rose-400;
+$pink-500: $pink;
+$pink-600: $am-coul-rose-600;
+$pink-700: $am-coul-rose-700;
+$pink-800: $am-coul-rose-800;
+$pink-900: $am-coul-rose-900;
+
+$red:     $am-coul-brique;
+$red-100: $am-coul-brique-100;
+$red-200: $am-coul-brique-200;
+$red-300: $am-coul-brique-300;
+$red-400: $am-coul-brique-400;
+$red-500: $red;
+$red-600: $am-coul-brique-600;
+$red-700: $am-coul-brique-700;
+$red-800: $am-coul-brique-800;
+$red-900: $am-coul-brique-900;
+
+$orange:     $am-coul-orange;
+$orange-100: $am-coul-orange-100;
+$orange-200: $am-coul-orange-200;
+$orange-300: $am-coul-orange-300;
+$orange-400: $am-coul-orange-400;
+$orange-500: $orange;
+$orange-600: $am-coul-orange-600;
+$orange-700: $am-coul-orange-700;
+$orange-800: $am-coul-orange-800;
+$orange-900: $am-coul-orange-900;
+
+$yellow:     $am-coul-jaune;
+$yellow-100: $am-coul-jaune-100;
+$yellow-200: $am-coul-jaune-200;
+$yellow-300: $am-coul-jaune-300;
+$yellow-400: $am-coul-jaune-400;
+$yellow-500: $yellow;
+$yellow-600: $am-coul-jaune-600;
+$yellow-700: $am-coul-jaune-700;
+$yellow-800: $am-coul-jaune-800;
+$yellow-900: $am-coul-jaune-900;
+
+$green:     $am-coul-vert;
+$green-100: $am-coul-vert-100;
+$green-200: $am-coul-vert-200;
+$green-300: $am-coul-vert-300;
+$green-400: $am-coul-vert-400;
+$green-500: $green;
+$green-600: $am-coul-vert-600;
+$green-700: $am-coul-vert-700;
+$green-800: $am-coul-vert-800;
+$green-900: $am-coul-vert-900;
+
+$teal:     $am-coul-turquoise;
+$teal-100: $am-coul-turquoise-100;
+$teal-200: $am-coul-turquoise-200;
+$teal-300: $am-coul-turquoise-300;
+$teal-400: $am-coul-turquoise-400;
+$teal-500: $teal;
+$teal-600: $am-coul-turquoise-600;
+$teal-700: $am-coul-turquoise-700;
+$teal-800: $am-coul-turquoise-800;
+$teal-900: $am-coul-turquoise-900;
+
+/* Couleurs du thème */
+
+$primary:   $am-coul-cyan-700;
+$secondary: $am-coul-cyan-500;
+$success:   $am-coul-vert-700;
+$info:      $am-coul-parme-700;
+$warning:   $am-coul-jaune-400;
+$danger:    $am-coul-brique-700;
+$light:     $am-coul-gris-100;
+$dark:      $am-coul-gris-500;
+
+$body-bg:          $am-coul-gris-100;
+$body-color:       $dark;
+$border-color:     $body-color;
+$table-color:      $body-color;
+$text-muted:       $am-coul-gris-400;
+$btn-close-color:  $am-coul-blanc;
+
+$min-contrast-ratio:   2.5;
+
+$component-active-color:      $white;
+$component-active-bg:         $primary;
+
+/* Alertes */
+
+/* 0% pour maintenir les couleurs de référence; pas de transformation */
+$alert-bg-scale:        0%;
+$alert-border-scale:    0%;
+$alert-color-scale:     0%;
+
+/* Formulaires */
+
+$input-bg:             $white;
+
+/* Tooltip */
+
+$tooltip-color:        $white;
+$tooltip-font-size:    1rem;
+$tooltip-bg:           $am-coul-gris-600;
+$tooltip-opacity:      1;
+$tooltip-arrow-color:  $tooltip-bg;
+
+/* Tableaux */
+
+$table-bg:                    transparent;
+$table-bg-scale:              0%;
+$table-accent-bg:             transparent;
+$table-border-color:          $border-color;
+
+$table-striped-color:         $table-color;
+$table-striped-bg:            $am-coul-gris-100;
+
+$table-active-color:          $table-color;
+$table-active-bg:             $am-coul-mauve-400;
+
+$table-hover-color:           $white;
+$table-hover-bg:              $am-coul-mauve-300;
+
+body.front-bundle table.dataTable.table-hover > tbody > tr:hover > * {
+    box-shadow: unset;
+    color: $table-hover-color;
+    background-color: $table-hover-bg;
+}
+body.front-bundle table.dataTable.table-hover > tbody > tr.selected:hover > * {
+    box-shadow: unset;
+}
+
+/* Typographie */
+
+$font-family-base:            'Source Sans Pro';
+$font-family-monospace:       'Source Sans Pro';
+$font-family-sans-serif:      'Source Sans Pro';
+
+$font-size-base:              0.9rem;
+
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+
+$enable-rounded: false;
+
+/* Breakpoints */
+
+$grid-breakpoints: (
+    xs: 0,
+    /* Breakpoint modifié pour éviter un passage prématuré du titre de l'application sous le logo */
+    sm: 670px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+/* Toast */
+
+$toast-header-color:                $white;
+$toast-background-color:            rgba($white, 1);
+$toast-header-background-color:     rgba($am-coul-cyan-700, 1);
+
+/* Accordion */
+
+$accordion-color:                  $dark;
+$accordion-bg:                     $body-bg;
+
+$accordion-border-color:           $white;
+$accordion-button-color:           $white;
+$accordion-button-bg:              $primary;
+$accordion-button-active-bg:       $white;
+$accordion-button-active-color:    $primary;
+
+.accordion-button:not(.collapsed) {
+    z-index: 3!important;
+    border-color: $am-coul-cyan-300!important;
+    outline: 0!important;
+    box-shadow: 0 0 0 0.25rem $am-coul-bleu-am-300!important;
+}
+
+/* Modal */
+
+$modal-content-border-color: $white;
+$modal-content-color: $dark;
+$modal-backdrop-bg: null;
+
+.modal-header {
+    color: $am-coul-blanc !important;
+    background-color: $primary !important;
+}
+.modal-content {
+    border: 0 !important;
+}
+
+/* Nav & tabs */
+
+.nav-pills .nav-item {
+    border: 1px solid $primary !important;
+}
+.nav-pills .nav-item:not(:last-of-type) {
+    border-right: 0 !important;
+}

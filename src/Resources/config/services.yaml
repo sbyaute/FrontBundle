@@ -1,0 +1,45 @@
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+
+    Sbyaute\FrontBundle\ParamConverter\DataTableParamConverter:
+        tags:
+            - request.param_converter
+
+    Sbyaute\FrontBundle\Twig\UserEventsExtension:
+        tags:
+            - { name: twig.extension }
+
+    Sbyaute\FrontBundle\Twig\GetParameterExtension:
+        tags:
+            - { name: twig.extension }
+
+    Sbyaute\FrontBundle\Twig\SbyauteFrontExtension:
+        tags:
+            - { name: twig.extension }
+
+    Sbyaute\FrontBundle\Twig\DeleteButtonGeneratorRuntime:
+        tags:
+            - { name: twig.runtime }
+
+    Sbyaute\FrontBundle\Twig\DeleteModalGeneratorRuntime:
+        tags:
+            - { name: twig.runtime }
+
+    Sbyaute\FrontBundle\Menu\MenuBuilder:
+        arguments:
+            $factory: '@knp_menu.factory'
+            $logout: '%front.logout%'
+            $logoutUrlGenerator: '@security.logout_url_generator'
+            $externalLink: '%front.menu_external_link%'
+        tags:
+            - { name: knp_menu.menu_builder, method: createMainMenu, alias: front_main_menu } # The alias is what is used to retrieve the menu
+
+    Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface:
+        alias: error_handler.error_renderer.serializer
+
+    Sbyaute\FrontBundle\Controller\:
+        resource: '../../Controller/'
+        tags: ['controller.service_arguments']
+        autoconfigure: true

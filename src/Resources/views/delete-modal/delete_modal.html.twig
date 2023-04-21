@@ -1,0 +1,4 @@
+{% include [
+    '@Front/delete-modal/delete_modal_' ~ name ~ '.html.twig',
+    '@Front/delete-modal/default_delete_modal.html.twig'
+    ] with {'delete_form': delete_form, 'name': name} %}

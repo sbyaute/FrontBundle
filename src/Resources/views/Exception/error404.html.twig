@@ -1,0 +1,9 @@
+{% extends '@Front/Exception/layout.html.twig' %}
+
+{% set title = 'Page introuvable' %}
+{# twigcs use-var title #}
+
+{% block message %}
+    La page recherchée est introuvable.
+    Vérifiez que l'URL est correcte ou rendez-vous sur la page d'<a href="{{ path(get_parameter('front.homepage')) }}">accueil</a>.
+{% endblock %}

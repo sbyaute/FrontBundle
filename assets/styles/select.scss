@@ -1,0 +1,15 @@
+.ts-control {
+    border-radius: 0;
+}
+
+.ts-dropdown {
+    border-radius: 0;
+}
+
+.ts-wrapper.multi .ts-control > div {
+    border-radius: 0;
+}
+
+.ts-wrapper.single .ts-control, .ts-wrapper.single .ts-control input{
+    cursor: text;
+}

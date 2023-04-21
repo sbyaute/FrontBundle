@@ -1,0 +1,147 @@
+/* Utilisation des couleurs */
+$am-coul-titre-page:        $am-coul-cyan-800;
+$am-coul-fond:              $am-coul-gris-100;
+$am-coul-menu-top:          $am-coul-blanc;
+$am-coul-menu-top-fond:     $am-coul-cyan-800;
+$am-coul-menu:              $am-coul-blanc;
+$am-coul-menu-header:       $am-coul-bleu-givre-700;
+$am-coul-menu-actif:        $am-coul-brique-700;
+$am-coul-menu-fond:         $am-coul-cyan-800;
+$am-coul-entete-fond:       $am-coul-blanc;
+$am-coul-contenu-fond:      $am-coul-blanc;
+$am-coul-marque:            $am-coul-bleu-am;
+$am-coul-texte:             $am-coul-gris-700;
+$am-coul-texte-inverse:     $am-coul-blanc;
+
+$am-coul-list: (
+    titre-page:        $am-coul-cyan-800,
+    fond:              $am-coul-gris-100,
+    menu-top:          $am-coul-blanc,
+    menu-top-fond:     $am-coul-cyan-800,
+    menu:              $am-coul-blanc,
+    menu-header:       $am-coul-bleu-givre-700,
+    menu-actif:        $am-coul-brique-700,
+    menu-fond:         $am-coul-cyan-800,
+    entete-fond:       $am-coul-blanc,
+    contenu-fond:      $am-coul-blanc,
+    marque:            $am-coul-bleu-am,
+    texte:             $am-coul-gris-700,
+    texte-inverse:     $am-coul-blanc
+);
+
+@each $coul, $val in $am-coul-list {
+    // Couleur principale
+    $selector: ".am-coul-#{$coul}";
+    $selectorBg: ".am-bg-coul-#{$coul}";
+    $selectorBorder: ".border.am-br-coul-#{$coul}";
+    #{$selector} {
+        color: $val !important;
+    }
+    #{$selectorBg} {
+        background-color: $val !important;
+    }
+    #{$selectorBorder} {
+        border-color: $val !important;
+    }
+}
+
+body,
+main {
+    overflow-x: hidden;
+}
+
+/* Entête de la page */
+.entete {
+    background-color: $am-coul-entete-fond;
+    padding-left: 4rem;
+}
+
+/* Logo AM */
+.logo .img-logo {
+    max-width: 12rem;
+}
+.logo .img-logo-mini {
+    max-width: 10rem;
+    display: none;
+}
+
+/* Entete réduite */
+.entete-mini {
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+}
+.entete-mini .titre-application {
+    font-size: 1.2rem !important;
+}
+.entete-mini .sous-titre-application {
+    font-size: 1rem !important;
+}
+.entete-mini .logo + div {
+    padding-top: 0rem !important;
+}
+.entete-mini .logo .img-logo {
+    display: none;
+}
+.entete-mini .logo .img-logo-mini {
+    display: inline;
+}
+
+/* Titre de l'application */
+.entete .logo + div {
+    padding-top: .5rem !important;
+}
+.entete .titre-application {
+    font-family: 'Cabin';
+    font-size: 1.4rem;
+    color: $am-coul-marque;
+    border-left: 1px solid $am-coul-marque;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.8rem;
+}
+.entete .sous-titre-application {
+    font-family: 'Cabin';
+    font-size: 1rem;
+    color: $am-coul-marque;
+}
+
+/* Titre de la page */
+.titre-page {
+    background-color: $am-coul-titre-page;
+    color: $am-coul-texte-inverse;
+}
+
+/* Pictogramme de la page */
+.titre-page .picto-page {
+    font-size: 2.5rem;
+    margin-right: .5rem;
+}
+.titre-page .picto-page[class*="bi-"] {
+    font-size: 1.8rem;
+}
+
+/* Contenu */
+body.front-bundle {
+    background-color: $am-coul-fond;
+}
+main article {
+    background-color: $am-coul-contenu-fond;
+}
+body.front-bundle main .content > .row {
+    /* Désactive la marge appliquée à .row pour éviter les décalages se produisant lorsque .row enfant direct de .content */
+    margin-left: unset;
+    margin-right: unset;
+}
+
+/* Formulaires */
+option {
+    font-family: 'Arial';
+}
+button {
+    /* Supprime la mise en forme du navigateur */
+    all: unset;
+}
+label.required:after {
+    /* Ajoute un astérisque aux champs requis */
+    content: " *";
+}

@@ -1,0 +1,9 @@
+{% set classalert = {success: 'success', notice: 'primary', warning: 'warning', error: 'danger'} %}
+{% for label, messages in app.flashes %}
+    {% for message in messages %}
+        <div class="alert alert-dismissible fade show alert-{{ label in classalert|keys ? classalert[label] : 'warning' }}" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+{% endfor %}

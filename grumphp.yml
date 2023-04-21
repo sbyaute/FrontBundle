@@ -1,0 +1,9 @@
+imports:
+  - { resource: vendor/sbyaute/grumskphp-bridge/Templates/bundle-symfony-5.yml }
+
+grumphp:
+  tasks:
+    docsram_linter:
+      verbose: true
+    twigcs:
+      path: './src/Resources/views/'

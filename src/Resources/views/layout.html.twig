@@ -1,0 +1,58 @@
+{# templates/base.html.twig #}
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+    <head>
+        {% block head %}
+            <meta charset="utf-8">
+        {% endblock %}
+
+        {% block favicon %}<link rel="icon" type="image/png" href="{{ asset('bundles/front/images/favicon-32x32.png') }}" />{% endblock %}
+
+        <title>
+            {% block title %}{{ page_title|raw }} | {{ get_parameter('front.app_title')|striptags }}{% endblock %}
+        </title>
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('bundles/front/front.css') }}">
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="{{ asset('bundles/front/front.js') }}" defer></script>
+        {% endblock %}
+    </head>
+
+    <body class="front-bundle {% block body_class %}{% endblock %}">
+    {% block body %}
+        {% if user is not defined %}
+            {% set user = front_user() %}
+        {% endif %}
+
+    {% embed '@Front/partials/header.html.twig' %}{% endembed %}
+        <div class="container-fluid row">
+        <div class="col"></div>
+        <div class="col-10">
+            {% block menu_aside %}
+{#                {% embed '@Front/partials/menu_aside.html.twig' with {'user': user} %}{% endembed %}#}
+            {% endblock menu_aside %}
+            <main class="w-100 p-3 {% block main_class %}{% endblock %}">
+                {% block body_header %}
+{#                    {% embed '@Front/partials/page_title.html.twig' %}{% endembed %}#}
+                {% endblock body_header %}
+                <section class="content">
+                    {% embed '@Front/partials/flashes.html.twig' %}{% endembed %}
+                    {% block content %}{% endblock %}
+                </section>
+            </main>
+            {% block toast_user %}
+                {% embed '@Front/partials/toast_user.html.twig' with {'user': user} %}{% endembed %}
+            {% endblock toast_user %}
+        </div>
+        <div class="col"></div>
+        </div>
+    {% endblock body %}
+    {% block footer %}
+    {% endblock footer %}
+    {% block javascripts_end %}
+    {% endblock %}
+    </body>
+</html>

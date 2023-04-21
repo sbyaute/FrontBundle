@@ -1,0 +1,12 @@
+{
+  "entrypoints": {
+    "front": {
+      "css": [
+        "/bundles/front/front.css"
+      ],
+      "js": [
+        "/bundles/front/front.js"
+      ]
+    }
+  }
+}
